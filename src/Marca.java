@@ -1,7 +1,8 @@
-public class Marca implements  Cloneable{
+public class Marca implements Cloneable{
     private String nome;
 
     public Marca(String nome) {
+        super();
         this.nome = nome;
     }
 
@@ -17,5 +18,11 @@ public class Marca implements  Cloneable{
     @Override
     public Object clone() throws CloneNotSupportedException{
         return super.clone();
+    }
+    @Override
+    public String toString(){
+        return "Marca{" +
+                "nome='" + nome +
+                '}';
     }
 }

@@ -47,9 +47,9 @@ public class Blusa implements Cloneable{
     @Override
     public  String toString() {
         return "Blusa{"+
-                ", id =" +id+
-                ", tamanho =" +tamanho+
-                ", Marca ="+marca+ '\''+
+                "id="+id+
+                ", tamanho="+tamanho+
+                ", marca="+marca+ '\''+
                 '}';
 
     }

@@ -1,10 +1,10 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-class BlusaTest {
+public class BlusaTest {
 
     @Test
-    void testClone() throws CloneNotSupportedException{
+    public void testClone() throws CloneNotSupportedException{
         Blusa blusa = new Blusa(1,"GG", new Marca("Adidas"));
 
         Blusa blusaClone = blusa.clone();
@@ -12,8 +12,8 @@ class BlusaTest {
         blusaClone.setTamanho("GG");
         blusaClone.getMarca().setNome("Nike");
 
-        assertEquals("Blusa{id=1, tamanho='GG', marca=Marca{'Adidas'}", blusa.toString());
-        assertEquals("Blusa{id=2, tamanho='GG', marca=Marca{'Nike'}", blusaClone.toString());
+        assertEquals("Blusa{id=1, tamanho=GG, marca=Marca{nome='Adidas}'}", blusa.toString());
+        assertEquals("Blusa{id=2, tamanho=GG, marca=Marca{nome='Nike}'}", blusaClone.toString());
     }
 
 
